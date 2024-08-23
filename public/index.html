@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <header class="app-header">
+            <h1>Queue Manager</h1>
+        </header>
+        <main class="app-main">
+            <div class="queues-panel">
+                <h2>Queues</h2>
+                <ul id="queue-list" class="queue-list"></ul>
+                <div class="queue-actions">
+                    <select id="queue-select">
+                        <option value="">Select a queue</option>
+                    </select>
+                    <button id="go-button">Go</button>
+                </div>
+                <form id="add-message-form" class="add-message">
+                    <textarea type="text" id="new-message" placeholder="New Message" required></textarea>
+                    <button type="submit">Add Message</button>
+                </form>
+                <form id="add-queue-form" class="add-queue">
+                    <input type="text" id="new-queue-name" placeholder="New Queue Name" required>
+                    <button type="submit">Add Queue</button>
+                </form>
+            </div>
+            <div class="messages-panel">
+                <h2>Queue Response</h2>
+                <pre id="queue-response" class="queue-response"></pre>
+            </div>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
